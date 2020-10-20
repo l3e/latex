@@ -1,0 +1,93 @@
+\documentclass[twocolumn]{article}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{authblk}
+\usepackage[colorlinks,citecolor=red,urlcolor=blue,bookmarks=false,hypertexnames=true]{hyperref}
+\usepackage{geometry}
+
+% Tamanho das margens:
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=30mm,
+	top=20mm,
+}
+
+\usepackage[alf, abnt-etal-list=0, abnt-emphasize=bf,abnt-last-names=bibtex, abnt-etal-text=it, abnt-etal-cite=2]{abntex2cite}
+
+\title{Título}
+\author{Leandro Vieira dos Santos}
+\affil{EREM Regina Pacis\\Palmerina-PE}
+
+\usepackage{lipsum}
+
+\begin{document}
+
+\maketitle        
+
+\begin{abstract}
+\lipsum[1]
+\end{abstract}
+
+\section{Introdução}
+
+\lipsum[1-2]
+
+\section{Metodologia}
+
+\lipsum[3-6]
+
+\subsection{Conexão em Estrela}\label{sec_estrela}
+Foi montada a partida do motor em estrela, conforme diagramas das Figuras~\ref{comando} e \ref{estrela}.
+
+\begin{figure}[!htb]
+	\centering\includegraphics[width=\columnwidth]{diagrama_estrela}\\
+	\caption{Circuito de comando. }\label{comando}
+\end{figure}
+
+\begin{figure}[!htb]
+	\centering\includegraphics[width=\columnwidth]{diagrama_estrela}\\
+	\caption{Conexão do motor trifásico em estrela. }\label{estrela}
+\end{figure}
+
+\subsection{Conexão em Triângulo}
+A Figura~\ref{triangulo} apresenta o diagrama de força da conexão em triângulo. O diagrama de comando utilizado é o mesmo da conexão em estrela, ilustrado na Figura~\ref{comando}.
+
+\begin{figure}[!htb]
+	\centering\includegraphics[width=\columnwidth]{diagrama_estrela}\\
+	\caption{Conexão do motor trifásico em estrela. }\label{triangulo}
+\end{figure}
+
+\section{Resultados e Discussão}
+
+Esta seção deve apresentar o que o aluno ou grupo obteve ao seguir o roteiro ou resolver a situação-problema proposta. Não é necessário repetir informações da metodologia. Quando necessário, pode-se fazer referência, ao que foi exposto no texto da Seção~\ref{sec_estrela}, por exemplo.
+
+Nesta seção, espera-se que sejam apresentadas descrições do funcionamento do circuito, medições, comparação entre os métodos utilizados, além de justificativas para o que for observado. Para todas as medições, deve ser informado em qual circuito foram colhidas, informando unidades e os equipamentos de medida utilizados para sua aferição. 
+
+\section{Conclusão}
+Esta seção deve ser curta, resumindo a aprendizagem obtida na aula. Nenhuma nova informação deve ser apresentada. Devem ser feitas menções aos objetivos da aula, aos principais resultados e os conceitos apreendidos com estes. Pode ser feito na forma de itens:
+
+\begin{itemize}
+	\item Partida direta de motor de indução trifásico pode ser feita em estrela ou triângulo
+	\item As correntes nominais e de partidas são maiores em triângulo.
+	\item Cada conexão é apropriada para um nível de tensão da rede.
+	\item Para o motor utilizado, a conexão em estrela serve para redes de 220~V ou para auxiliar a partida; enquanto que a conexão em triângulo serve para redes de 127~V apenas.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%5
+% BIBLIOGRAFIA 
+% Estilo de bibliografia ABNT. Se não tiver instalado, mude para plain ou ieeetr
+
+%\bibliographystyle{plain} % Inclua isso se não tiver ABNTEX instalado
+\bibliography{refs}
+\begin{thebibliography}{refs}
+\bibitem{}
+
+\end{thebibliography}
+\end{document}
